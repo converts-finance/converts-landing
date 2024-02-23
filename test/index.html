@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  </head>
+  <body>
+    <div class="d-flex flex-column container">
+      <label class="form-label" for="">Nome del compagnia</label>
+      <input class="form-control" type="text" />
+      <label class="form-label" for="">Quantita emessa</label>
+      <input class="form-control" type="text" />
+      <label class="form-label" for="">Maturity date/ burn date</label>
+      <input class="form-control" type="date" />
+      <label class="form-label" for="">Valore nominale - nominal value (1000)</label>
+      <input class="form-control" id="nominalValue" type="number" value="1000" disabled />
+      <label class="form-label" for="">Market price at issue (valore di un token)</label>
+      <input class="form-control" type="text" />
+      <label class="form-label" for="">Interest coupon %</label>
+      <input class="form-control" id="interestCoupon" type="number" />
+      <label class="form-label" for="">Conversion price</label>
+      <input class="form-control" type="number" />
+      <label class="form-label" for="">Conversion ratio</label>
+      <input class="form-control" type="text" />
+      <label class="form-label" for="">Periodo interessi</label>
+      <select class="form-select" name="" id="couponFrequency">
+        <option value="1">Annuale</option>
+        <option value="2">Semi-annuale</option>
+      </select>
+      <button id="calculate" class="btn btn-primary">Calculate</button>
+
+      <label class="form-label" for="">Result</label>
+      <input class="form-control" id="result" type="text" />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

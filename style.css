@@ -1,0 +1,25 @@
+body {
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* background: conic-gradient(from 245deg at 40% 60%, #d4e1e7, #1d3641); */
+  background: url("bg-blur.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn-convert {
+  background-color: #76ff02;
+  border: 1px solid #6eeb00;
+  color: #1f4200;
+}
+.btn-convert:hover {
+  background-color: #66da00;
+  border: 1px solid #66da00;
+  color: #122600;
+}
+.btn-convert:active {
+  background-color: #57ba00 !important;
+  border: 1px solid #57ba00 !important;
+  color: #122600;
+}
